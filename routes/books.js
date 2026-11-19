@@ -4,7 +4,7 @@ import { Router } from "express";
 // Create a new Express router instance
 export const bookRouter = Router();
 
-// Define middleware specific to this router instance
+// Define middleware specific to this router instance, run for all http requests
 bookRouter.use((req, res, next) => {
   console.log("Book route accessed at: ", Date.now());
   next();
