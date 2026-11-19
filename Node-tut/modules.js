@@ -5,6 +5,8 @@ const sayHi=require('./function');
 const data=require('./twoWayModule');
 require('./mindgrenade') //if only function is executed/invoked
 
-sayHi('Arhama');
-sayHi(names.john);
-sayHi(names.peter);
+// sayHi('Arhama');
+// sayHi(names.john);
+// sayHi(names.peter);
+
+// console.log(data);

@@ -4,7 +4,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   switch (req.url) {
     case "/":
-      //blocking code: nested for loop
+      // blocking code: nested for loop
       // for (let i = 0; i < 100; i++) {
       //   for (let j = 0; j < 100; j++) {
       //     console.log(`${i} ${j} `);
@@ -21,7 +21,6 @@ const server = http.createServer((req, res) => {
       res.end("Error Page");
       break;
   }
-
 });
 server.listen(5000);
-console.log(`Server is listening : https://localhost:5000`);
+console.logF(`Server is listening : https://localhost:5000`);

@@ -1,5 +1,6 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+import express from "express"
+export const router = express.Router();
 
 router.post("/", (req, res) => {
   const { name } = req.body;
@@ -10,4 +11,4 @@ router.post("/", (req, res) => {
   res.status(400).send("Please Provide a Username");
 });
 
-module.exports = router;
+// module.exports = router;

@@ -1,25 +1,43 @@
 {
   "scripts": {
     "main": "node app.js",
-    "const": "node const.js",
-    "fss": "node fileSystemSync.js",
-    "fsa": "node fs-async.js",
-    "http": "node httpserver.js",
-    "lodash": "node lodashpackage.js",
-    "mg": "node mindgrenade.js",
-    "mm": "node modules.js",
-    "os": "node operatingSystem.js",
-    "path": "node pathSystem.js",
-    "osSTO": "node setTimeout.js",
-    "osSI": "node setInterval.js",
-    "stream": "node Streamhttp.js"
-    
-
+    "const": "node Node-tut/const.js",
+    "func": "node Node-tut/function.js",
+    "fss": "node Node-tut/fileSystemSync.js",
+    "fsa": "node Node-tut/fs-async.js",
+    "http": "node Node-tut/httpserver.js",
+    "EE": "node Node-tut/EventEmitter.js",
+    "lash": "node Node-tut/lodashpackage.js",
+    "mg": "node Node-tut/mindgrenade.js",
+    "mod": "node Node-tut/modules.js",
+    "os": "node Node-tut/operatingSystem.js",
+    "path": "node Node-tut/pathSystem.js",
+    "SE": "node Node-tut/ServerEvents.js",
+    "sto": "node Node-tut/setTimeout.js",
+    "si": "node Node-tut/setInterval.js",
+    "stream": "node Node-tut/Streamhttp.js",
+    "sr": "node Node-tut/StreamRead.js",
+    "sw": "node Node-tut/StreamWrite.js",
+    "ws": "node Node-tut/webServcommon.js",
+    "expServ": "node Node-tut/server.js",
+    "eVSn": "node expressVSNode.js",
+    "shf": "node singlehandlerfunc.js",
+    "mm": "node multiplemidware.js",
+    "cm": "node categoriesmidware.js",
+    "serv": "node server.js",
+    "expStatic": "node Express-tut/ExpressStatic-RouteParam.js",
+    "method": "node Express-tut/METHOD.js",
+    "midware": "node Express-tut/MidwareSetup.js",
+    "nodeServ": "node Express-tut/NodeServer.cjs",
+    "url": "node Express-tut/UrlParam.js",
+    "statView": "node public/staticView/server.js",
+    "dynView":"node views/dynamicView/server.js"
   },
-
-  
   "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620",
   "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
     "lodash": "^4.18.1"
-  }
+  },
+  "type": "module"
 }

@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>List of Friends</h1>
+    <ul>
+    <%# Loop through the friends object %>
+    <% for (const eachFriend in friends) { -%>
+      <li><%= friends[eachFriend] %> is my <%= eachFriend %></li>
+    <% } -%>
+    </ul>
+  </body>
+</html>

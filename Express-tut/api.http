@@ -1,0 +1,9 @@
+@url="https://localhost:3000"
+GET {url}/people
+
+###
+POST {url}/login
+Content-Type: "application/json"
+{
+
+}

@@ -1,0 +1,1 @@
+scaffolding nodejs project first then, running pnpm [filename] in scripts set the filename to whatever u want to run 

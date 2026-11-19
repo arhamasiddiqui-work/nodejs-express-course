@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 1,
     name: "utopia sofa",
@@ -37,11 +37,11 @@ const products = [
     name: "sofa set",
   },
 ];
-const people = [
-  { id: 1, name: "Arhama" },
-  { id: 2, name: "azka" },
-  { id: 3, name: "arishah" },
-  { id: 4, name: "ok" },
-  { id: 5, name: "idk" },
+export const people = [
+  { id: 1, name: "john" },
+  { id: 2, name: "jack" },
+  { id: 3, name: "alex" },
+  { id: 4, name: "alice" },
+  { id: 5, name: "emily" },
 ];
-module.exports={products, people}
+// module.exports={products, people}

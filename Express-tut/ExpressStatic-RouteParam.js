@@ -1,7 +1,12 @@
 //EXPRESS WAY OF CREATING A SERVER and importing files & json basic
-const express = require("express");
+// const express = require("express");
+import express from "express";
 const app = express();
-const { products } = require("./dataJohnProducts.js");
+// const { products } = require("./dataJohnProducts.js");
+import { products } from "./dataJohnProducts.js";
+
+const port = 3000;
+const host = "localhost";
 
 // getting data from an api
 app.get("/", (req, res) => {
@@ -32,9 +37,9 @@ app.get("/api/products/:productId/reviews/:reviewId", (req, res) => {
   res.send("Still Learning!");
 });
 
-app.listen(3000);
-console.log("SERVER IS LISTENING ON PORT: https://localhost:3000");
-
+app.listen(port, host, () => {
+  console.log(`SERVER IS LISTENING ON PORT: https://${host}:${port}`);
+});
 
 //any file in this folder can be accessed by a URL path
 //app.use(express.static('folderName'))

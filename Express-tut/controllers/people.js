@@ -1,10 +1,12 @@
-let {people}=require('../dataJohnProducts')
+// let {people}=require('../dataJohnProducts')
 
-const getPeople = (req, res) => {
+import { people } from "../dataJohnProducts.js";
+
+export const getPeople = (req, res) => {
   res.status(200).json({ success: true, data: people });
 };
 
-const createPerson = (req, res) => {
+export const createPerson = (req, res) => {
   const { name } = req.body;
   if (!name) {
     return res
@@ -14,7 +16,7 @@ const createPerson = (req, res) => {
   res.status(201).json({ success: true, person: name });
 };
 
-const createPersonPostman = (req, res) => {
+export const createPersonPostman = (req, res) => {
   const { name } = req.body;
   if (!name) {
     return res
@@ -24,7 +26,7 @@ const createPersonPostman = (req, res) => {
   res.status(200).json({ success: true, data: [...people, name] });
 };
 
-const updPerson = (req, res) => {
+export const updPerson = (req, res) => {
   const { id } = req.params;
   const { name } = req.body;
   const person = people.find((person) => person.id === Number(id));
@@ -42,7 +44,7 @@ const updPerson = (req, res) => {
   res.status(200).json({ success: true, data: newPeople });
 };
 
-const delPerson = (req, res) => {
+export const delPerson = (req, res) => {
   const person = people.find((person) => person.id === Number(req.params.id));
   if (!person) {
     return res
@@ -55,10 +57,10 @@ const delPerson = (req, res) => {
   return res.status(200).json({ seccess: true, data: newPeople });
 };
 
-module.exports = {
-  getPeople,
-  createPerson,
-  createPersonPostman,
-  updPerson,
-  delPerson,
-};
+// module.exports = {
+//   getPeople,
+//   createPerson,
+//   createPersonPostman,
+//   updPerson,
+//   delPerson,
+// };
